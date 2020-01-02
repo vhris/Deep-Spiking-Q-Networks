@@ -1,0 +1,9 @@
+Discount Factor: 0.999
+Learning Rate: 0.001
+Epsilon Start: 1.0
+Epsilon End: 0.05
+Epsilon Decay: 0.999
+Replay Memory Size: 1000
+Sample Size: 128
+Target Update Frequency: 5
+Gym seed: 646 , Torch seed: 735 , Random seed: 786
