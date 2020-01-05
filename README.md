@@ -38,5 +38,6 @@ Thanks to my advisor Mahmoud Akl and to my supervisor Prof. Dr.-Ing. Alois Chris
 	
 [3] Claus Meschede. Training Neural Networks for Event-Based
 	End-to-End Robot Control. Master thesis at the Technical University of Munich, July 2017.
+	
 These and all other sources used are listed in the bibliography of the thesis.
 
