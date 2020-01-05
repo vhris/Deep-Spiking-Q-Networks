@@ -50,7 +50,6 @@ def load_agent(environment,policy_net, device,epsilon=0,gym_seed=None,save_repla
             # we chose a random action with probability epsilon
             if random.random()>=epsilon:
                 action = policy_net.forward(state).argmax().detach().item()
-                print(policy_net.forward(state))
 
                 # if compare against is not None, we compute the prediction of the compare network
                 if compare_against is not None:
@@ -60,7 +59,7 @@ def load_agent(environment,policy_net, device,epsilon=0,gym_seed=None,save_repla
                     else:
                         mismatches += 1
             else:
-                action = random.randint(0,env.action_space.n)
+                action = random.randint(0,env.action_space.n-1)
             observation, reward, done, info = env.step(action)
 
             total_reward += reward
@@ -82,7 +81,7 @@ def load_agent(environment,policy_net, device,epsilon=0,gym_seed=None,save_repla
 
             if done:
                 # save replay memory:
-                if save_replay:
+                if save_replay and not memory_saved:
                     if len(memory) >= memory.capacity:
                         memory.save(policy_net)
                         print('replay memory saved')
@@ -108,7 +107,6 @@ def load_agent(environment,policy_net, device,epsilon=0,gym_seed=None,save_repla
     if compare_against is not None:
         print('Similarity (Conversion Accuracy) after ' + str(correct + mismatches) + ' iterations: ' + str(
             correct * 100 / (mismatches + correct)) + '%')
-    env.render()
     env.close()
     plt.ioff()
     plt.show()

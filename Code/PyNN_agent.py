@@ -2,7 +2,7 @@
 
 from scipy.special import erf
 import pylab
-#import pyNN.nest as nest_sim
+import pyNN.nest as nest_sim
 import spynnaker8
 from spynnaker8 import extra_models
 import spynnaker8 as spin_sim
@@ -11,7 +11,7 @@ import numpy as np
 
 class PyNNAgent:
 
-    def __init__(self, architecture, file, simulation_time, backend='spinnaker',add_bias_as_observation=False,has_biases=True):
+    def __init__(self, architecture, file, simulation_time, backend='spinnaker',add_bias_as_observation=False):
         """
 
         :param architecture: shape of the network that is loaded, should be a list of the form [size_input, size_hidden_1,...,size_hidden_n, size_output]
@@ -28,14 +28,8 @@ class PyNNAgent:
         self.add_bias_as_observation = add_bias_as_observation
         # load weights and biases from file
         layers = torch.load(self.file)
-        # if network has biases, split network into weights and biases
-        if has_biases:
-            weights = layers[0]
-            biases = layers[1]
-        # else network has only weights
-        else:
-            weights = layers
-            biases = [None] * len(architecture)
+        weights = layers[0]
+        biases = layers[1]
         self.weights = []
         self.biases = []
         for l in range(0, len(weights)):

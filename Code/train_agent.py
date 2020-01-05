@@ -68,7 +68,6 @@ def optimize_model(memory,BATCH_SIZE,device,policy_net, Transition, n_actions, t
     non_final_mask = torch.tensor(tuple(map(lambda s: s is not None,
                                           batch.next_state)), device=device, dtype=torch.bool)
     # use stack if the input state has only one dimension (is a vector)
-    #TODO test this
     if batch.state[0].dim() == 1:
         non_final_next_states = torch.stack([s for s in batch.next_state
                                                     if s is not None])
@@ -102,8 +101,8 @@ def optimize_model(memory,BATCH_SIZE,device,policy_net, Transition, n_actions, t
         next_state_best_actions = torch.zeros([BATCH_SIZE,n_actions], device=device)
         next_state_best_actions[non_final_mask] = policy_net.forward(non_final_next_states)
 
-        best_action_mask = torch.zeros_like(next_state_best_actions,dtype=torch.bool,device=device)
-        best_action_mask[torch.arange(len(next_state_best_actions)), next_state_best_actions.argmax(1)] = True
+        best_action_mask = torch.zeros_like(next_state_best_actions)
+        best_action_mask[torch.arange(len(next_state_best_actions)), next_state_best_actions.argmax(1)] = 1
 
         next_state_values[non_final_mask] = target_net.forward(non_final_next_states).masked_select(
             best_action_mask[non_final_mask].bool())
@@ -128,7 +127,9 @@ def optimize_model(memory,BATCH_SIZE,device,policy_net, Transition, n_actions, t
 
 def train_agent(environment, policy_net,target_net, batch_size,gamma,eps_start,eps_end,eps_decay,target_update,optimizer,learning_rate,
                 memory_size,device, gym_target_average,gym_target_stay,num_episodes=1000,max_steps=None, render =True,
-                double_q_learning=True, gradient_clipping=True,initial_replay_size=0,gym_seed=None, torch_seed=None,random_seed = None):
+                double_q_learning=True, gradient_clipping=True,initial_replay_size=0, input_preprocessing=None,
+                reward_preprocessing=None, gym_seed=None, torch_seed=None,random_seed = None, update_frequency=1,
+                no_op_range=None, no_op=None, observation_history_length=None, target_update_mode='episodes'):
     """Args:
             environment: the name of the gym environment as a string
             policy_net: the policy network for the agent
@@ -151,7 +152,23 @@ def train_agent(environment, policy_net,target_net, batch_size,gamma,eps_start,e
             double_q_learning: whether to use double Q Learning
             gradient_clipping: whether to use gradient clipping
             initial_replay_size: at what memory size is the training started
+            input_preprocessing: function that is used to preprocess the inputs, if None, no preprocessing happens.
+                                 This function needs to take the reward and the observation as input.
+            reward_preprocessing: function that is used to preprocess the rewards, if None, no preprocessing happens.
+                                  This function needs to take only the observation history as input.
             gym_seed: manual seed for the gym environment (optional)
+            torch_seed: manual seed for torch that was used to save in the hyperparameters file
+                        (only for saving, setting this variable does not change the training process of the agent)
+            random_seed: manual seed for random that was used to save in the hyperparameters file
+                        (only for saving, setting this variable does not change the training process of the agent)
+            update_frequency: (used for BreakOut) determines how many steps the agent does, before the networks are updated
+            no_op_range: (used for BreakOut) tuple: number of minimum and maximum "do-nothing"-operations at the
+                         beginning of each episode. If None the agent directly chooses the first action.
+            no_op: (used for BreakOut) describes which operation is the "do-nothing" operation (int).
+            observation_history_length: (used for BreakOut) keep a history of the last observations in a list.
+                                        If None, no history is kept.
+            target_update_mode: 'episodes' or 'iterations', whether to update the target update every
+                                target_update_frequency episodes or iterations.
             """
     # set up environment
     env = gym.make(environment)
@@ -166,6 +183,9 @@ def train_agent(environment, policy_net,target_net, batch_size,gamma,eps_start,e
     else:
         max_steps = np.inf
         env._max_episode_steps = np.inf
+    # throw error if target update mode is invalid
+    if not (target_update_mode == 'iterations' or target_update_mode == 'episodes'):
+        raise Exception('Target update mode invalid. Choose "iterations" or "episodes".')
     # Get number of actions from gym action space
     n_actions = env.action_space.n
 
@@ -180,7 +200,7 @@ def train_agent(environment, policy_net,target_net, batch_size,gamma,eps_start,e
     # average counter counts how long the agent is already above the gym target
     avg_counter = 0
     # best average keeps track of the best average and best_average_after at what episode it was reached
-    best_average = 0
+    best_average = -np.inf
     best_average_after = np.inf
     # finished tells if the gym standard is reached and finished_after at what episode
     finished = False
@@ -188,15 +208,43 @@ def train_agent(environment, policy_net,target_net, batch_size,gamma,eps_start,e
 
     # save initial model
     save_model(policy_net, 'initial')
+    # set up directory for the best 100 episode average model and save the initial network into it.
+    save_model(policy_net,'best')
     save_hyperparameters(gamma,learning_rate,eps_start,eps_end,eps_decay,memory_size,batch_size,target_update,
                          others='Gym seed: '+str(gym_seed)+' , Torch seed: '+str(torch_seed)+' , Random seed: '+str(random_seed))
 
     for i_episode in range(num_episodes):
         # Initialize the environment and state
         observation = env.reset()
-        state = torch.tensor(observation, device=device).float()
-
+        # Keep track of the reward in this episode
         total_reward = 0
+
+        # Initialize observation history if needed:
+        if observation_history_length is not None:
+            observation_history = []
+            observation_history.insert(0,observation)
+
+        # compute random number of do nothing operations, if specified:
+        if no_op_range is not None:
+            # random number or no ops between no_op[0] and no_op[1]
+            rand = random.randint(no_op_range[0],no_op_range[1])
+            for i in range(0,rand):
+                observation, reward, _, _ = env.step(no_op)
+                if reward_preprocessing is not None:
+                    reward = reward_preprocessing(reward,observation)
+                total_reward += reward
+                observation_history.insert(0,observation)
+                if len(observation_history) > observation_history_length:
+                    observation_history.pop(-1)
+
+        # preprocess the input if preprocessing specified
+        if input_preprocessing is not None:
+            observation = input_preprocessing(observation_history)
+        # else the observation needs to be cast to a float tensor for the computation of the neural network
+        else:
+            observation = torch.tensor(observation, device=device).float()
+        state = observation
+
         for t in count():
             if render:
                 env.render()
@@ -206,10 +254,25 @@ def train_agent(environment, policy_net,target_net, batch_size,gamma,eps_start,e
             steps_done += 1
             observation, reward, done, info = env.step(action.item())
 
+            # reward is added before preprocessing in order to plot the actual reward from the gym environment
             total_reward += reward
+            # preprocess the reward if a preprocessing function is passed
+            if reward_preprocessing is not None:
+                reward = reward_preprocessing(reward,observation)
             reward = torch.tensor([reward], device=device)
 
-            observation = torch.tensor(observation, device=device).float()
+            # if observation history is required, add observation to history
+            if observation_history_length is not None:
+                observation_history.insert(0,observation)
+                if len(observation_history) > observation_history_length:
+                    observation_history.pop(-1)
+
+            # preprocess the input if a preprocessing function is specified
+            if input_preprocessing is not None:
+                observation = input_preprocessing(observation_history)
+            # else the observation needs to be cast to a float tensor for the computation of the neural network
+            else:
+                observation = torch.tensor(observation, device=device).float()
 
             # Observe new state
             if not done:
@@ -225,11 +288,18 @@ def train_agent(environment, policy_net,target_net, batch_size,gamma,eps_start,e
             # Move to the next state
             state = next_state
 
-            # Perform one step of the optimization (on the policy network)
-            opt = optimize_model(memory, batch_size, device, policy_net, Transition, n_actions, target_net, gamma,
-                                 optimizer,double_q_learning=double_q_learning,gradient_clipping=gradient_clipping,initial_replay_size=initial_replay_size)
-            if opt is not None:
-                optimizer, policy_net = opt
+            # Perform one step of the optimization (on the policy network) ever update_frequency steps (default 1)
+            if steps_done%update_frequency == 0:
+                opt = optimize_model(memory, batch_size, device, policy_net, Transition, n_actions, target_net, gamma,
+                                     optimizer,double_q_learning=double_q_learning,gradient_clipping=gradient_clipping,initial_replay_size=initial_replay_size)
+                if opt is not None:
+                    optimizer, policy_net = opt
+
+            # Update the target network, copying all weights and biases in DQN
+            if target_update_mode == 'iterations':
+                if steps_done % target_update == 0:
+                    target_net.load_state_dict(policy_net.state_dict())
+
             if done:
                 rewards_t = torch.tensor(episode_rewards, dtype=torch.float)
 
@@ -238,32 +308,37 @@ def train_agent(environment, policy_net,target_net, batch_size,gamma,eps_start,e
                 if len(rewards_t) >= 100:
                     # plot the episode durations
                     average = rewards_t[rewards_t.shape[0] - 100:rewards_t.shape[0]].mean()
-                    #print(average, avg_counter)
                     if average > best_average:
                         best_average = average
                         best_average_after = i_episode
-                    if average >= gym_target_average:
-                        avg_counter += 1
-                    else:
-                        avg_counter = 0
-                    # save neural network if open ai gym standard is reached:
-                    if (avg_counter >= gym_target_stay) and not finished:
-                        save_model(policy_net, 'trained')
-                        # break the training loop
-                        finished = True
-                        finished_after = i_episode
+                        # save the best model (with the best 100 episode average) in folder best
+                        os.remove(('best/model.pt'))
+                        os.rmdir('best')
+                        save_model(policy_net, 'best')
+                    if gym_target_average is not None:
+                        if average >= gym_target_average:
+                            avg_counter += 1
+                        else:
+                            avg_counter = 0
+                    # save neural network if open ai gym standard is reached in folder 'trained':
+                    if gym_target_average is not None:
+                        if (avg_counter >= gym_target_stay) and not finished:
+                            save_model(policy_net, 'trained')
+                            finished = True
+                            finished_after = i_episode
                 #stop the episode by break
                 break
         # Update the target network, copying all weights and biases in DQN
-        if i_episode % target_update == 0:
-            target_net.load_state_dict(policy_net.state_dict())
+        if target_update_mode == 'episodes':
+            if i_episode % target_update == 0:
+                target_net.load_state_dict(policy_net.state_dict())
 
     # print some information about the training process
     if finished:
-        print('OpenAIGymStandard reached at episode ', finished_after)
+        print('OpenAIGymStandard reached at episode ', finished_after, '. Model saved in folder trained.')
     else:
         print('Failed to reach OpenAIGymStandard')
-    print('Best average: ', best_average, ' reached at episode ', best_average_after)
+    print('Best 100 episode average: ', best_average, ' reached at episode ', best_average_after, '. Model saved in folder best.')
     print('Complete')
     env.close()
     plt.savefig('Training.png')

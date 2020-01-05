@@ -39,15 +39,10 @@ class ReplayMemory(object):
                 model: model used to compute the Q-values
             """
         # array for input data
-        memory_inputs = []
+        states = torch.cat([row[0].unsqueeze(dim=0) for row in self.memory])
+        memory_inputs = states.detach().numpy()
         # array for q-values ("ground truth")
-        memory_outputs = []
-        for mem in self.memory:
-            memory_inputs.append(mem[0].tolist())
-            memory_outputs.append(model.forward(mem[0]).tolist())
-        # write to numpy files
-        memory_inputs = np.array(memory_inputs)
-        memory_outputs = np.array(memory_outputs)
+        memory_outputs = model.forward(states).detach().numpy()
         np.savez("trained/memory_inputs", memory_inputs)
         np.savez("trained/memory_outputs", memory_outputs)
 

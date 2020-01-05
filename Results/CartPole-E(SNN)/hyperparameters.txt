@@ -1,0 +1,10 @@
+Discount Factor: 0.999
+Learning Rate: 0.0005
+Epsilon Start: 1
+Epsilon End: 0.05
+Epsilon Decay: Linear
+Replay Memory Size: 40000
+Sample Size: 128
+Target Update Frequency: 10
+Episodes until model computed: 274
+Number of steps done in training: 199

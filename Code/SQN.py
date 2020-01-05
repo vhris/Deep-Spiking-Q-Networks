@@ -53,7 +53,7 @@ class SuperSpike(torch.autograd.Function):
 class SQN(nn.Module):
 
     def __init__(self,network_shape,device,alpha,beta, weight_scale=1,encoding='constant',decoding='potential',threshold=1,simulation_time=100,reset='subtraction',
-                 two_input_neurons=False, add_bias_as_observation=False, has_biases=True):
+                 two_input_neurons=False, add_bias_as_observation=False):
         #TODO add output method 'time_to_first_spike'?
         #TODO add two_output_neurons
         """Args:
@@ -68,8 +68,7 @@ class SQN(nn.Module):
             simulation_time: number of time steps to be simulated
             reset: either 'subtraction' or 'zero'
             two_input_neurons: for input methods 'equidistant' and 'poisson' if one output neuron is to be used for negative and positive inputs each
-            add_bias_as_observation: this option is for training using SpyTorch as SpyTorch allows no hidden layer biases. If true a 1 is added as constant input
-            has_biases: whether the network has biases, if False this is a special case for load"""
+            add_bias_as_observation: this option is for training using SpyTorch as SpyTorch allows no hidden layer biases. If true a 1 is added as constant input"""
         self.alpha = alpha
         self.beta = beta
         self.encoding = encoding
@@ -81,7 +80,6 @@ class SQN(nn.Module):
         self.reset = reset
         self.add_bias_as_observation = add_bias_as_observation
         self.two_input_neurons = two_input_neurons
-        self.has_biases= has_biases
 
         if self.add_bias_as_observation:
             # add one more neuron to the architecture at the input, because the bias acts as an additional input
@@ -222,14 +220,8 @@ class SQN(nn.Module):
 
     def load_state_dict(self,layers):
         """Method to load weights and biases into the network"""
-        # if network has biases, split network into weights and biases
-        if self.has_biases:
-            weights = layers[0]
-            biases = layers[1]
-        # else network has only weights
-        else:
-            weights = layers
-            biases = [None] * len(self.bias)
+        weights = layers[0]
+        biases = layers[1]
         for l in range(0,len(weights)):
             self.weights[l] = weights[l].detach().clone().requires_grad_(True)
             if biases[l] is not None:

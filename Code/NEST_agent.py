@@ -21,7 +21,6 @@ class Nestwork:
         :param simulation_time: default simulation time for the agent, can be changed for individual simulations
         :param neuron_type: type of the neuron, we tested iaf_psc_delta (LIF neuron) and pp_psc_delta (LIF neuron with adaptive thresholds and stochastic firing)
         :param add_bias_as_observation: this option is for loading a network trained using SpyTorch as SpyTorch allows no hidden layer biases. If true a 1 is added as constant input
-        :param has_biases: whether the loaded network has biases, if yes loading looks slightly different
         """
         self.architecture = architecture
         self.add_bias_as_observation = add_bias_as_observation
@@ -30,14 +29,8 @@ class Nestwork:
         self.simulation_time = simulation_time
         # load weights and biases from file
         layers = torch.load(self.file)
-        # if network has biases, split network into weights and biases
-        if has_biases:
-            weights = layers[0]
-            biases = layers[1]
-        # else network has only weights
-        else:
-            weights = layers
-            biases = [None]*len(architecture)
+        weights = layers[0]
+        biases = layers[1]
         self.weights = []
         self.biases = []
         for l in range(0, len(weights)):
