@@ -34,7 +34,7 @@ def select_action(policy_net,state,eps_start,eps_end,eps_decay,n_actions,device,
             # t.max(1) will return largest column value of each row.
             # second column on max result is index of where max element was
             # found, so we pick action with the larger expected reward.
-            return torch.tensor([[policy_net.forward(state).argmax()]], device=device, dtype=torch.long)
+            return torch.tensor([[policy_net.forward(state.float()).argmax()]], device=device, dtype=torch.long)
     else:
         return torch.tensor([[random.randrange(n_actions)]], device=device, dtype=torch.long)
 
@@ -69,14 +69,14 @@ def optimize_model(memory,BATCH_SIZE,device,policy_net, Transition, n_actions, t
                                           batch.next_state)), device=device, dtype=torch.bool)
     # use stack if the input state has only one dimension (is a vector)
     if batch.state[0].dim() == 1:
-        non_final_next_states = torch.stack([s for s in batch.next_state
+        non_final_next_states = torch.stack([s.float() for s in batch.next_state
                                                     if s is not None])
-        state_batch = torch.stack(batch.state)
+        state_batch = torch.stack([s.float() for s in batch.state])
     # use this if the input state has several dimensions
     else:
-        non_final_next_states = torch.cat([s for s in batch.next_state
+        non_final_next_states = torch.cat([s.float() for s in batch.next_state
                                              if s is not None])
-        state_batch = torch.cat(batch.state)
+        state_batch = torch.cat([s.float() for s in batch.state])
 
     action_batch = torch.cat(batch.action)
     reward_batch = torch.cat(batch.reward)
@@ -129,7 +129,8 @@ def train_agent(environment, policy_net,target_net, batch_size,gamma,eps_start,e
                 memory_size,device, gym_target_average,gym_target_stay,num_episodes=1000,max_steps=None, render =True,
                 double_q_learning=True, gradient_clipping=True,initial_replay_size=0, input_preprocessing=None,
                 reward_preprocessing=None, gym_seed=None, torch_seed=None,random_seed = None, update_frequency=1,
-                no_op_range=None, no_op=None, observation_history_length=None, target_update_mode='episodes'):
+                no_op_range=None, no_op=None, observation_history_length=None, target_update_mode='episodes',
+                frameskip=None):
     """Args:
             environment: the name of the gym environment as a string
             policy_net: the policy network for the agent
@@ -169,6 +170,7 @@ def train_agent(environment, policy_net,target_net, batch_size,gamma,eps_start,e
                                         If None, no history is kept.
             target_update_mode: 'episodes' or 'iterations', whether to update the target update every
                                 target_update_frequency episodes or iterations.
+            frameskip: If None determines the frameskip of the environment, used for Atari games.
             """
     # set up environment
     env = gym.make(environment)
@@ -183,6 +185,9 @@ def train_agent(environment, policy_net,target_net, batch_size,gamma,eps_start,e
     else:
         max_steps = np.inf
         env._max_episode_steps = np.inf
+    # set up frameskip
+    if frameskip is not None:
+        env._frameskip = frameskip
     # throw error if target update mode is invalid
     if not (target_update_mode == 'iterations' or target_update_mode == 'episodes'):
         raise Exception('Target update mode invalid. Choose "iterations" or "episodes".')
