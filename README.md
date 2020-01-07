@@ -38,6 +38,8 @@ Thanks to my advisor Mahmoud Akl and to my supervisor Prof. Dr.-Ing. Alois Chris
 
 [2] Emre O. Neftci, Hesham Mostafa, and Friedemann Zenke. Surrogate Gradient Learning in Spiking
 	Neural Networks. IEEE SPM WHITE PAPER FOR THE SPECIAL ISSUE ON NEUROMORPHIC COMPUTING, 28 January 2019.
+	Github repository:
+	https://github.com/fzenke/spytorch
 	
 [3] Claus Meschede. Training Neural Networks for Event-Based
 	End-to-End Robot Control. Master thesis at the Technical University of Munich, July 2017.
