@@ -27,6 +27,9 @@ To run the code it should be sufficient to install gym, torch, matplotlib, NEST,
 ## Tutorials
 The CartPole experiments are written as tutorials which demonstrate how to use our code.
 
+##  Contact 
+If you are interested in the code or thesis, feel free to contact me via chris.hahn@tum.de.
+
 ## Acknowledgements
 Thanks to my advisor Mahmoud Akl and to my supervisor Prof. Dr.-Ing. Alois Christian Knoll for making this thesis possible. Further, credit goes to the creators of SpyTorch [2] and Claus Meschede [3] on whose code this repository is based.
 
@@ -35,9 +38,16 @@ Thanks to my advisor Mahmoud Akl and to my supervisor Prof. Dr.-Ing. Alois Chris
 
 [2] Emre O. Neftci, Hesham Mostafa, and Friedemann Zenke. Surrogate Gradient Learning in Spiking
 	Neural Networks. IEEE SPM WHITE PAPER FOR THE SPECIAL ISSUE ON NEUROMORPHIC COMPUTING, 28 January 2019.
+	Github repository:
+	https://github.com/fzenke/spytorch
 	
 [3] Claus Meschede. Training Neural Networks for Event-Based
 	End-to-End Robot Control. Master thesis at the Technical University of Munich, July 2017.
+	Github repository: 
+	https://github.com/clamesc/Training-Neural-Networks-for-Event-Based-End-to-End-Robot-Control/tree/master/Controller
 	
 These and all other sources used are listed in the bibliography of the thesis.
+
+## License
+This project is distributed under a MIT license which makes it free for any kind of use while excluding any warranties or liabilities (see LICENSE.txt).
 
