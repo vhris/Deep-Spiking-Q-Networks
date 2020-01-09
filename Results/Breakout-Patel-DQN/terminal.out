@@ -1,0 +1,2097 @@
+Current Episode: 100
+ Average reward over the last 100 episodes: 1.04
+Last 100 episodes took time: 35.005306243896484
+Current number of frames seen: 17765
+Current random action probability: 0.9599639503071883
+
+
+Current Episode: 200
+ Average reward over the last 100 episodes: 1.03
+Last 100 episodes took time: 35.06485557556152
+Current number of frames seen: 35564
+Current random action probability: 0.9214587249166755
+
+
+Current Episode: 300
+ Average reward over the last 100 episodes: 0.95
+Last 100 episodes took time: 35.46824860572815
+Current number of frames seen: 53244
+Current random action probability: 0.8847401075995538
+
+
+Current Episode: 400
+ Average reward over the last 100 episodes: 1.29
+Last 100 episodes took time: 45.153855085372925
+Current number of frames seen: 71816
+Current random action probability: 0.8477436486994548
+
+
+Current Episode: 500
+ Average reward over the last 100 episodes: 1.24
+Last 100 episodes took time: 44.56776809692383
+Current number of frames seen: 90092
+Current random action probability: 0.8128474395324189
+
+
+Current Episode: 600
+ Average reward over the last 100 episodes: 1.13
+Last 100 episodes took time: 44.038819789886475
+Current number of frames seen: 108045
+Current random action probability: 0.7799669080459454
+
+
+Current Episode: 700
+ Average reward over the last 100 episodes: 1.01
+Last 100 episodes took time: 42.76590371131897
+Current number of frames seen: 125526
+Current random action probability: 0.7492293515293924
+
+
+Current Episode: 800
+ Average reward over the last 100 episodes: 1.08
+Last 100 episodes took time: 42.694953203201294
+Current number of frames seen: 142788
+Current random action probability: 0.7200657312931253
+
+
+Current Episode: 900
+ Average reward over the last 100 episodes: 1.39
+Last 100 episodes took time: 45.98161959648132
+Current number of frames seen: 161469
+Current random action probability: 0.6897823767949961
+
+
+Current Episode: 1000
+ Average reward over the last 100 episodes: 1.37
+Last 100 episodes took time: 45.55525541305542
+Current number of frames seen: 179820
+Current random action probability: 0.6612743477943092
+
+
+Current Episode: 1100
+ Average reward over the last 100 episodes: 1.29
+Last 100 episodes took time: 44.01445269584656
+Current number of frames seen: 197715
+Current random action probability: 0.6346097582392429
+
+
+Current Episode: 1200
+ Average reward over the last 100 episodes: 1.73
+Last 100 episodes took time: 46.69889688491821
+Current number of frames seen: 216616
+Current random action probability: 0.607612841948861
+
+
+Current Episode: 1300
+ Average reward over the last 100 episodes: 2.1
+Last 100 episodes took time: 52.08354449272156
+Current number of frames seen: 237629
+Current random action probability: 0.5789452713824629
+
+
+Current Episode: 1400
+ Average reward over the last 100 episodes: 2.06
+Last 100 episodes took time: 51.15630793571472
+Current number of frames seen: 258556
+Current random action probability: 0.5517393788931415
+
+
+Current Episode: 1500
+ Average reward over the last 100 episodes: 2.13
+Last 100 episodes took time: 51.409188985824585
+Current number of frames seen: 279329
+Current random action probability: 0.525998226023345
+
+
+Current Episode: 1600
+ Average reward over the last 100 episodes: 1.79
+Last 100 episodes took time: 49.01786684989929
+Current number of frames seen: 299302
+Current random action probability: 0.5023815482770376
+
+
+Current Episode: 1700
+ Average reward over the last 100 episodes: 3.99
+Last 100 episodes took time: 62.63807034492493
+Current number of frames seen: 324624
+Current random action probability: 0.4739582418004638
+
+
+Current Episode: 1800
+ Average reward over the last 100 episodes: 5.02
+Last 100 episodes took time: 68.49403357505798
+Current number of frames seen: 352552
+Current random action probability: 0.4444709713298758
+
+
+Current Episode: 1900
+ Average reward over the last 100 episodes: 5.92
+Last 100 episodes took time: 71.9938051700592
+Current number of frames seen: 382055
+Current random action probability: 0.4153110545212672
+
+
+Current Episode: 2000
+ Average reward over the last 100 episodes: 7.46
+Last 100 episodes took time: 76.1594967842102
+Current number of frames seen: 413259
+Current random action probability: 0.38654894090838643
+
+
+Current Episode: 2100
+ Average reward over the last 100 episodes: 7.18
+Last 100 episodes took time: 76.75292897224426
+Current number of frames seen: 444734
+Current random action probability: 0.3595545494529274
+
+
+Current Episode: 2200
+ Average reward over the last 100 episodes: 7.53
+Last 100 episodes took time: 79.33970260620117
+Current number of frames seen: 477347
+Current random action probability: 0.3335710600901619
+
+
+Current Episode: 2300
+ Average reward over the last 100 episodes: 7.65
+Last 100 episodes took time: 79.78047394752502
+Current number of frames seen: 510013
+Current random action probability: 0.30942756624673734
+
+
+Current Episode: 2400
+ Average reward over the last 100 episodes: 8.26
+Last 100 episodes took time: 81.29529619216919
+Current number of frames seen: 542990
+Current random action probability: 0.28682631052948193
+
+
+Current Episode: 2500
+ Average reward over the last 100 episodes: 7.51
+Last 100 episodes took time: 78.84926724433899
+Current number of frames seen: 575402
+Current random action probability: 0.26622162991471693
+
+
+Current Episode: 2600
+ Average reward over the last 100 episodes: 7.85
+Last 100 episodes took time: 81.88883447647095
+Current number of frames seen: 609197
+Current random action probability: 0.24631237996995411
+
+
+Current Episode: 2700
+ Average reward over the last 100 episodes: 8.69
+Last 100 episodes took time: 85.4054069519043
+Current number of frames seen: 644331
+Current random action probability: 0.2271912729317198
+
+
+Current Episode: 2800
+ Average reward over the last 100 episodes: 7.96
+Last 100 episodes took time: 85.03509759902954
+Current number of frames seen: 679035
+Current random action probability: 0.20976188006825972
+
+
+Current Episode: 2900
+ Average reward over the last 100 episodes: 9.48
+Last 100 episodes took time: 88.38570261001587
+Current number of frames seen: 714917
+Current random action probability: 0.19314559601849338
+
+
+Current Episode: 3000
+ Average reward over the last 100 episodes: 9.09
+Last 100 episodes took time: 91.75723171234131
+Current number of frames seen: 752270
+Current random action probability: 0.17724488176828182
+
+
+Current Episode: 3100
+ Average reward over the last 100 episodes: 9.7
+Last 100 episodes took time: 92.85226392745972
+Current number of frames seen: 790210
+Current random action probability: 0.16243374391394674
+
+
+Current Episode: 3200
+ Average reward over the last 100 episodes: 9.57
+Last 100 episodes took time: 97.67078280448914
+Current number of frames seen: 830339
+Current random action probability: 0.14811268700406233
+
+
+Current Episode: 3300
+ Average reward over the last 100 episodes: 9.7
+Last 100 episodes took time: 96.72358727455139
+Current number of frames seen: 870035
+Current random action probability: 0.13518882133090876
+
+
+Current Episode: 3400
+ Average reward over the last 100 episodes: 9.86
+Last 100 episodes took time: 102.31425404548645
+Current number of frames seen: 911833
+Current random action probability: 0.12279753806365061
+
+
+Current Episode: 3500
+ Average reward over the last 100 episodes: 9.35
+Last 100 episodes took time: 103.63980913162231
+Current number of frames seen: 954291
+Current random action probability: 0.11137283590202708
+
+
+Current Episode: 3600
+ Average reward over the last 100 episodes: 9.21
+Last 100 episodes took time: 107.20150089263916
+Current number of frames seen: 998250
+Current random action probability: 0.10066293299811485
+
+
+Current Episode: 3700
+ Average reward over the last 100 episodes: 10.08
+Last 100 episodes took time: 114.15667343139648
+Current number of frames seen: 1045000
+Current random action probability: 0.1
+
+
+Current Episode: 3800
+ Average reward over the last 100 episodes: 10.26
+Last 100 episodes took time: 116.15193104743958
+Current number of frames seen: 1092425
+Current random action probability: 0.1
+
+
+Current Episode: 3900
+ Average reward over the last 100 episodes: 10.12
+Last 100 episodes took time: 113.02825498580933
+Current number of frames seen: 1138760
+Current random action probability: 0.1
+
+
+Current Episode: 4000
+ Average reward over the last 100 episodes: 10.17
+Last 100 episodes took time: 113.93506526947021
+Current number of frames seen: 1185420
+Current random action probability: 0.1
+
+
+Current Episode: 4100
+ Average reward over the last 100 episodes: 10.3
+Last 100 episodes took time: 112.67117500305176
+Current number of frames seen: 1231615
+Current random action probability: 0.1
+
+
+Current Episode: 4200
+ Average reward over the last 100 episodes: 9.93
+Last 100 episodes took time: 114.47370338439941
+Current number of frames seen: 1278541
+Current random action probability: 0.1
+
+
+Current Episode: 4300
+ Average reward over the last 100 episodes: 10.41
+Last 100 episodes took time: 113.30369687080383
+Current number of frames seen: 1324977
+Current random action probability: 0.1
+
+
+Current Episode: 4400
+ Average reward over the last 100 episodes: 9.92
+Last 100 episodes took time: 118.29543018341064
+Current number of frames seen: 1373416
+Current random action probability: 0.1
+
+
+Current Episode: 4500
+ Average reward over the last 100 episodes: 9.61
+Last 100 episodes took time: 108.4328465461731
+Current number of frames seen: 1417891
+Current random action probability: 0.1
+
+
+Current Episode: 4600
+ Average reward over the last 100 episodes: 10.19
+Last 100 episodes took time: 108.97495245933533
+Current number of frames seen: 1462455
+Current random action probability: 0.1
+
+
+Current Episode: 4700
+ Average reward over the last 100 episodes: 10.24
+Last 100 episodes took time: 113.2410135269165
+Current number of frames seen: 1508948
+Current random action probability: 0.1
+
+
+Current Episode: 4800
+ Average reward over the last 100 episodes: 10.41
+Last 100 episodes took time: 110.81481695175171
+Current number of frames seen: 1554420
+Current random action probability: 0.1
+
+
+Current Episode: 4900
+ Average reward over the last 100 episodes: 10.1
+Last 100 episodes took time: 111.8435287475586
+Current number of frames seen: 1600199
+Current random action probability: 0.1
+
+
+Current Episode: 5000
+ Average reward over the last 100 episodes: 10.17
+Last 100 episodes took time: 112.53739523887634
+Current number of frames seen: 1646423
+Current random action probability: 0.1
+
+
+Current Episode: 5100
+ Average reward over the last 100 episodes: 9.54
+Last 100 episodes took time: 107.44264721870422
+Current number of frames seen: 1690340
+Current random action probability: 0.1
+
+
+Current Episode: 5200
+ Average reward over the last 100 episodes: 10.32
+Last 100 episodes took time: 110.76601123809814
+Current number of frames seen: 1735726
+Current random action probability: 0.1
+
+
+Current Episode: 5300
+ Average reward over the last 100 episodes: 10.1
+Last 100 episodes took time: 114.92419004440308
+Current number of frames seen: 1782705
+Current random action probability: 0.1
+
+
+Current Episode: 5400
+ Average reward over the last 100 episodes: 10.09
+Last 100 episodes took time: 116.5107069015503
+Current number of frames seen: 1830391
+Current random action probability: 0.1
+
+
+Current Episode: 5500
+ Average reward over the last 100 episodes: 10.1
+Last 100 episodes took time: 109.93085289001465
+Current number of frames seen: 1875531
+Current random action probability: 0.1
+
+
+Current Episode: 5600
+ Average reward over the last 100 episodes: 10.07
+Last 100 episodes took time: 110.56932544708252
+Current number of frames seen: 1920653
+Current random action probability: 0.1
+
+
+Current Episode: 5700
+ Average reward over the last 100 episodes: 9.49
+Last 100 episodes took time: 109.59756374359131
+Current number of frames seen: 1965360
+Current random action probability: 0.1
+
+
+Current Episode: 5800
+ Average reward over the last 100 episodes: 9.0
+Last 100 episodes took time: 104.24098491668701
+Current number of frames seen: 2007870
+Current random action probability: 0.1
+
+
+Current Episode: 5900
+ Average reward over the last 100 episodes: 9.88
+Last 100 episodes took time: 107.82959032058716
+Current number of frames seen: 2051985
+Current random action probability: 0.1
+
+
+Current Episode: 6000
+ Average reward over the last 100 episodes: 9.96
+Last 100 episodes took time: 111.08040308952332
+Current number of frames seen: 2097604
+Current random action probability: 0.1
+
+
+Current Episode: 6100
+ Average reward over the last 100 episodes: 9.79
+Last 100 episodes took time: 105.958580493927
+Current number of frames seen: 2140992
+Current random action probability: 0.1
+
+
+Current Episode: 6200
+ Average reward over the last 100 episodes: 10.13
+Last 100 episodes took time: 114.93743419647217
+Current number of frames seen: 2188180
+Current random action probability: 0.1
+
+
+Current Episode: 6300
+ Average reward over the last 100 episodes: 9.94
+Last 100 episodes took time: 109.4024167060852
+Current number of frames seen: 2233147
+Current random action probability: 0.1
+
+
+Current Episode: 6400
+ Average reward over the last 100 episodes: 9.89
+Last 100 episodes took time: 113.17382574081421
+Current number of frames seen: 2279612
+Current random action probability: 0.1
+
+
+Current Episode: 6500
+ Average reward over the last 100 episodes: 9.82
+Last 100 episodes took time: 114.87487411499023
+Current number of frames seen: 2326751
+Current random action probability: 0.1
+
+
+Current Episode: 6600
+ Average reward over the last 100 episodes: 9.87
+Last 100 episodes took time: 114.45246291160583
+Current number of frames seen: 2373508
+Current random action probability: 0.1
+
+
+Current Episode: 6700
+ Average reward over the last 100 episodes: 9.92
+Last 100 episodes took time: 112.84231376647949
+Current number of frames seen: 2419434
+Current random action probability: 0.1
+
+
+Current Episode: 6800
+ Average reward over the last 100 episodes: 10.05
+Last 100 episodes took time: 116.4867570400238
+Current number of frames seen: 2466953
+Current random action probability: 0.1
+
+
+Current Episode: 6900
+ Average reward over the last 100 episodes: 10.07
+Last 100 episodes took time: 111.43045783042908
+Current number of frames seen: 2512520
+Current random action probability: 0.1
+
+
+Current Episode: 7000
+ Average reward over the last 100 episodes: 10.06
+Last 100 episodes took time: 113.74597930908203
+Current number of frames seen: 2558993
+Current random action probability: 0.1
+
+
+Current Episode: 7100
+ Average reward over the last 100 episodes: 10.03
+Last 100 episodes took time: 108.73106026649475
+Current number of frames seen: 2603307
+Current random action probability: 0.1
+
+
+Current Episode: 7200
+ Average reward over the last 100 episodes: 9.87
+Last 100 episodes took time: 111.58899402618408
+Current number of frames seen: 2649040
+Current random action probability: 0.1
+
+
+Current Episode: 7300
+ Average reward over the last 100 episodes: 10.13
+Last 100 episodes took time: 108.05674457550049
+Current number of frames seen: 2693173
+Current random action probability: 0.1
+
+
+Current Episode: 7400
+ Average reward over the last 100 episodes: 10.27
+Last 100 episodes took time: 112.87026023864746
+Current number of frames seen: 2739197
+Current random action probability: 0.1
+
+
+Current Episode: 7500
+ Average reward over the last 100 episodes: 10.26
+Last 100 episodes took time: 114.91060304641724
+Current number of frames seen: 2786120
+Current random action probability: 0.1
+
+
+Current Episode: 7600
+ Average reward over the last 100 episodes: 10.04
+Last 100 episodes took time: 111.88106751441956
+Current number of frames seen: 2831773
+Current random action probability: 0.1
+
+
+Current Episode: 7700
+ Average reward over the last 100 episodes: 10.05
+Last 100 episodes took time: 114.02658867835999
+Current number of frames seen: 2878350
+Current random action probability: 0.1
+
+
+Current Episode: 7800
+ Average reward over the last 100 episodes: 10.19
+Last 100 episodes took time: 110.93065357208252
+Current number of frames seen: 2923788
+Current random action probability: 0.1
+
+
+Current Episode: 7900
+ Average reward over the last 100 episodes: 9.95
+Last 100 episodes took time: 110.29825901985168
+Current number of frames seen: 2968956
+Current random action probability: 0.1
+
+
+Current Episode: 8000
+ Average reward over the last 100 episodes: 10.38
+Last 100 episodes took time: 110.73630356788635
+Current number of frames seen: 3014307
+Current random action probability: 0.1
+
+
+Current Episode: 8100
+ Average reward over the last 100 episodes: 10.3
+Last 100 episodes took time: 115.55991744995117
+Current number of frames seen: 3061741
+Current random action probability: 0.1
+
+
+Current Episode: 8200
+ Average reward over the last 100 episodes: 10.18
+Last 100 episodes took time: 114.96618676185608
+Current number of frames seen: 3108797
+Current random action probability: 0.1
+
+
+Current Episode: 8300
+ Average reward over the last 100 episodes: 9.98
+Last 100 episodes took time: 113.57996606826782
+Current number of frames seen: 3155349
+Current random action probability: 0.1
+
+
+Current Episode: 8400
+ Average reward over the last 100 episodes: 10.1
+Last 100 episodes took time: 113.33834600448608
+Current number of frames seen: 3201460
+Current random action probability: 0.1
+
+
+Current Episode: 8500
+ Average reward over the last 100 episodes: 10.11
+Last 100 episodes took time: 115.17704224586487
+Current number of frames seen: 3248613
+Current random action probability: 0.1
+
+
+Current Episode: 8600
+ Average reward over the last 100 episodes: 10.16
+Last 100 episodes took time: 114.28660440444946
+Current number of frames seen: 3295220
+Current random action probability: 0.1
+
+
+Current Episode: 8700
+ Average reward over the last 100 episodes: 10.04
+Last 100 episodes took time: 112.43801546096802
+Current number of frames seen: 3341106
+Current random action probability: 0.1
+
+
+Current Episode: 8800
+ Average reward over the last 100 episodes: 10.42
+Last 100 episodes took time: 114.18500900268555
+Current number of frames seen: 3387935
+Current random action probability: 0.1
+
+
+Current Episode: 8900
+ Average reward over the last 100 episodes: 10.2
+Last 100 episodes took time: 112.27505707740784
+Current number of frames seen: 3433819
+Current random action probability: 0.1
+
+
+Current Episode: 9000
+ Average reward over the last 100 episodes: 10.32
+Last 100 episodes took time: 110.69647574424744
+Current number of frames seen: 3478948
+Current random action probability: 0.1
+
+
+Current Episode: 9100
+ Average reward over the last 100 episodes: 10.13
+Last 100 episodes took time: 114.53905487060547
+Current number of frames seen: 3525825
+Current random action probability: 0.1
+
+
+Current Episode: 9200
+ Average reward over the last 100 episodes: 10.03
+Last 100 episodes took time: 111.10498189926147
+Current number of frames seen: 3571211
+Current random action probability: 0.1
+
+
+Current Episode: 9300
+ Average reward over the last 100 episodes: 10.39
+Last 100 episodes took time: 111.5223479270935
+Current number of frames seen: 3616647
+Current random action probability: 0.1
+
+
+Current Episode: 9400
+ Average reward over the last 100 episodes: 10.03
+Last 100 episodes took time: 111.759441614151
+Current number of frames seen: 3662214
+Current random action probability: 0.1
+
+
+Current Episode: 9500
+ Average reward over the last 100 episodes: 10.29
+Last 100 episodes took time: 115.89891266822815
+Current number of frames seen: 3709603
+Current random action probability: 0.1
+
+
+Current Episode: 9600
+ Average reward over the last 100 episodes: 10.3
+Last 100 episodes took time: 116.96235871315002
+Current number of frames seen: 3757595
+Current random action probability: 0.1
+
+
+Current Episode: 9700
+ Average reward over the last 100 episodes: 10.37
+Last 100 episodes took time: 117.30106496810913
+Current number of frames seen: 3805576
+Current random action probability: 0.1
+
+
+Current Episode: 9800
+ Average reward over the last 100 episodes: 10.46
+Last 100 episodes took time: 110.99394416809082
+Current number of frames seen: 3850913
+Current random action probability: 0.1
+
+
+Current Episode: 9900
+ Average reward over the last 100 episodes: 9.3
+Last 100 episodes took time: 105.67602229118347
+Current number of frames seen: 3894017
+Current random action probability: 0.1
+
+
+Current Episode: 10000
+ Average reward over the last 100 episodes: 10.11
+Last 100 episodes took time: 113.38707852363586
+Current number of frames seen: 3940450
+Current random action probability: 0.1
+
+
+Current Episode: 10100
+ Average reward over the last 100 episodes: 10.24
+Last 100 episodes took time: 113.88862156867981
+Current number of frames seen: 3987183
+Current random action probability: 0.1
+
+
+Current Episode: 10200
+ Average reward over the last 100 episodes: 10.18
+Last 100 episodes took time: 117.47570562362671
+Current number of frames seen: 4035186
+Current random action probability: 0.1
+
+
+Current Episode: 10300
+ Average reward over the last 100 episodes: 9.88
+Last 100 episodes took time: 113.8379397392273
+Current number of frames seen: 4081619
+Current random action probability: 0.1
+
+
+Current Episode: 10400
+ Average reward over the last 100 episodes: 9.82
+Last 100 episodes took time: 112.21493482589722
+Current number of frames seen: 4127367
+Current random action probability: 0.1
+
+
+Current Episode: 10500
+ Average reward over the last 100 episodes: 9.96
+Last 100 episodes took time: 115.40678358078003
+Current number of frames seen: 4174530
+Current random action probability: 0.1
+
+
+Current Episode: 10600
+ Average reward over the last 100 episodes: 9.38
+Last 100 episodes took time: 105.75070214271545
+Current number of frames seen: 4217728
+Current random action probability: 0.1
+
+
+Current Episode: 10700
+ Average reward over the last 100 episodes: 9.85
+Last 100 episodes took time: 114.1954665184021
+Current number of frames seen: 4264097
+Current random action probability: 0.1
+
+
+Current Episode: 10800
+ Average reward over the last 100 episodes: 9.98
+Last 100 episodes took time: 114.77741885185242
+Current number of frames seen: 4311091
+Current random action probability: 0.1
+
+
+Current Episode: 10900
+ Average reward over the last 100 episodes: 9.39
+Last 100 episodes took time: 107.5393054485321
+Current number of frames seen: 4354814
+Current random action probability: 0.1
+
+
+Current Episode: 11000
+ Average reward over the last 100 episodes: 10.09
+Last 100 episodes took time: 113.87272477149963
+Current number of frames seen: 4401342
+Current random action probability: 0.1
+
+
+Current Episode: 11100
+ Average reward over the last 100 episodes: 10.01
+Last 100 episodes took time: 117.35782670974731
+Current number of frames seen: 4448841
+Current random action probability: 0.1
+
+
+Current Episode: 11200
+ Average reward over the last 100 episodes: 10.17
+Last 100 episodes took time: 111.77992057800293
+Current number of frames seen: 4494370
+Current random action probability: 0.1
+
+
+Current Episode: 11300
+ Average reward over the last 100 episodes: 10.14
+Last 100 episodes took time: 116.40697836875916
+Current number of frames seen: 4541878
+Current random action probability: 0.1
+
+
+Current Episode: 11400
+ Average reward over the last 100 episodes: 10.04
+Last 100 episodes took time: 113.01764464378357
+Current number of frames seen: 4588099
+Current random action probability: 0.1
+
+
+Current Episode: 11500
+ Average reward over the last 100 episodes: 9.98
+Last 100 episodes took time: 114.44905090332031
+Current number of frames seen: 4634934
+Current random action probability: 0.1
+
+
+Current Episode: 11600
+ Average reward over the last 100 episodes: 9.72
+Last 100 episodes took time: 115.60731363296509
+Current number of frames seen: 4682134
+Current random action probability: 0.1
+
+
+Current Episode: 11700
+ Average reward over the last 100 episodes: 10.02
+Last 100 episodes took time: 111.12554144859314
+Current number of frames seen: 4727548
+Current random action probability: 0.1
+
+
+Current Episode: 11800
+ Average reward over the last 100 episodes: 9.95
+Last 100 episodes took time: 111.06158113479614
+Current number of frames seen: 4772963
+Current random action probability: 0.1
+
+
+Current Episode: 11900
+ Average reward over the last 100 episodes: 10.12
+Last 100 episodes took time: 112.11373496055603
+Current number of frames seen: 4819058
+Current random action probability: 0.1
+
+
+Current Episode: 12000
+ Average reward over the last 100 episodes: 10.22
+Last 100 episodes took time: 108.67352652549744
+Current number of frames seen: 4863397
+Current random action probability: 0.1
+
+
+Current Episode: 12100
+ Average reward over the last 100 episodes: 10.18
+Last 100 episodes took time: 109.48091340065002
+Current number of frames seen: 4908109
+Current random action probability: 0.1
+
+
+Current Episode: 12200
+ Average reward over the last 100 episodes: 10.21
+Last 100 episodes took time: 115.72821187973022
+Current number of frames seen: 4955261
+Current random action probability: 0.1
+
+
+Current Episode: 12300
+ Average reward over the last 100 episodes: 10.05
+Last 100 episodes took time: 110.4260265827179
+Current number of frames seen: 5000505
+Current random action probability: 0.1
+
+
+Current Episode: 12400
+ Average reward over the last 100 episodes: 9.22
+Last 100 episodes took time: 107.18118643760681
+Current number of frames seen: 5044168
+Current random action probability: 0.1
+
+
+Current Episode: 12500
+ Average reward over the last 100 episodes: 9.99
+Last 100 episodes took time: 109.87720394134521
+Current number of frames seen: 5088983
+Current random action probability: 0.1
+
+
+Current Episode: 12600
+ Average reward over the last 100 episodes: 10.42
+Last 100 episodes took time: 112.42655920982361
+Current number of frames seen: 5134859
+Current random action probability: 0.1
+
+
+Current Episode: 12700
+ Average reward over the last 100 episodes: 9.89
+Last 100 episodes took time: 114.08483529090881
+Current number of frames seen: 5181412
+Current random action probability: 0.1
+
+
+Current Episode: 12800
+ Average reward over the last 100 episodes: 9.97
+Last 100 episodes took time: 112.85354232788086
+Current number of frames seen: 5227461
+Current random action probability: 0.1
+
+
+Current Episode: 12900
+ Average reward over the last 100 episodes: 9.42
+Last 100 episodes took time: 111.51302814483643
+Current number of frames seen: 5272863
+Current random action probability: 0.1
+
+
+Current Episode: 13000
+ Average reward over the last 100 episodes: 9.87
+Last 100 episodes took time: 112.89137077331543
+Current number of frames seen: 5319040
+Current random action probability: 0.1
+
+
+Current Episode: 13100
+ Average reward over the last 100 episodes: 10.04
+Last 100 episodes took time: 112.87808442115784
+Current number of frames seen: 5365146
+Current random action probability: 0.1
+
+
+Current Episode: 13200
+ Average reward over the last 100 episodes: 10.08
+Last 100 episodes took time: 120.4135160446167
+Current number of frames seen: 5414442
+Current random action probability: 0.1
+
+
+Current Episode: 13300
+ Average reward over the last 100 episodes: 8.48
+Last 100 episodes took time: 100.53426456451416
+Current number of frames seen: 5455445
+Current random action probability: 0.1
+
+
+Current Episode: 13400
+ Average reward over the last 100 episodes: 8.99
+Last 100 episodes took time: 104.34200930595398
+Current number of frames seen: 5498101
+Current random action probability: 0.1
+
+
+Current Episode: 13500
+ Average reward over the last 100 episodes: 9.74
+Last 100 episodes took time: 107.24724388122559
+Current number of frames seen: 5541771
+Current random action probability: 0.1
+
+
+Current Episode: 13600
+ Average reward over the last 100 episodes: 10.04
+Last 100 episodes took time: 113.25374937057495
+Current number of frames seen: 5588003
+Current random action probability: 0.1
+
+
+Current Episode: 13700
+ Average reward over the last 100 episodes: 9.61
+Last 100 episodes took time: 111.79608154296875
+Current number of frames seen: 5633586
+Current random action probability: 0.1
+
+
+Current Episode: 13800
+ Average reward over the last 100 episodes: 10.01
+Last 100 episodes took time: 111.17767214775085
+Current number of frames seen: 5678859
+Current random action probability: 0.1
+
+
+Current Episode: 13900
+ Average reward over the last 100 episodes: 10.17
+Last 100 episodes took time: 109.70207810401917
+Current number of frames seen: 5723636
+Current random action probability: 0.1
+
+
+Current Episode: 14000
+ Average reward over the last 100 episodes: 10.05
+Last 100 episodes took time: 118.23788475990295
+Current number of frames seen: 5772043
+Current random action probability: 0.1
+
+
+Current Episode: 14100
+ Average reward over the last 100 episodes: 10.28
+Last 100 episodes took time: 114.70174312591553
+Current number of frames seen: 5818735
+Current random action probability: 0.1
+
+
+Current Episode: 14200
+ Average reward over the last 100 episodes: 10.32
+Last 100 episodes took time: 117.03119349479675
+Current number of frames seen: 5866465
+Current random action probability: 0.1
+
+
+Current Episode: 14300
+ Average reward over the last 100 episodes: 9.74
+Last 100 episodes took time: 114.25294232368469
+Current number of frames seen: 5913299
+Current random action probability: 0.1
+
+
+Current Episode: 14400
+ Average reward over the last 100 episodes: 9.33
+Last 100 episodes took time: 111.78392481803894
+Current number of frames seen: 5958819
+Current random action probability: 0.1
+
+
+Current Episode: 14500
+ Average reward over the last 100 episodes: 10.5
+Last 100 episodes took time: 115.35051012039185
+Current number of frames seen: 6005965
+Current random action probability: 0.1
+
+
+Current Episode: 14600
+ Average reward over the last 100 episodes: 10.0
+Last 100 episodes took time: 112.42944240570068
+Current number of frames seen: 6051732
+Current random action probability: 0.1
+
+
+Current Episode: 14700
+ Average reward over the last 100 episodes: 10.35
+Last 100 episodes took time: 113.38033366203308
+Current number of frames seen: 6097900
+Current random action probability: 0.1
+
+
+Current Episode: 14800
+ Average reward over the last 100 episodes: 10.18
+Last 100 episodes took time: 110.50503897666931
+Current number of frames seen: 6143012
+Current random action probability: 0.1
+
+
+Current Episode: 14900
+ Average reward over the last 100 episodes: 10.11
+Last 100 episodes took time: 110.94287776947021
+Current number of frames seen: 6188082
+Current random action probability: 0.1
+
+
+Current Episode: 15000
+ Average reward over the last 100 episodes: 10.28
+Last 100 episodes took time: 112.01640439033508
+Current number of frames seen: 6233694
+Current random action probability: 0.1
+
+
+Current Episode: 15100
+ Average reward over the last 100 episodes: 10.2
+Last 100 episodes took time: 116.61679315567017
+Current number of frames seen: 6281408
+Current random action probability: 0.1
+
+
+Current Episode: 15200
+ Average reward over the last 100 episodes: 10.2
+Last 100 episodes took time: 114.39694404602051
+Current number of frames seen: 6328059
+Current random action probability: 0.1
+
+
+Current Episode: 15300
+ Average reward over the last 100 episodes: 10.01
+Last 100 episodes took time: 112.53570604324341
+Current number of frames seen: 6374144
+Current random action probability: 0.1
+
+
+Current Episode: 15400
+ Average reward over the last 100 episodes: 10.28
+Last 100 episodes took time: 110.2437834739685
+Current number of frames seen: 6419026
+Current random action probability: 0.1
+
+
+Current Episode: 15500
+ Average reward over the last 100 episodes: 10.21
+Last 100 episodes took time: 114.67266917228699
+Current number of frames seen: 6465909
+Current random action probability: 0.1
+
+
+Current Episode: 15600
+ Average reward over the last 100 episodes: 10.07
+Last 100 episodes took time: 113.85574126243591
+Current number of frames seen: 6512513
+Current random action probability: 0.1
+
+
+Current Episode: 15700
+ Average reward over the last 100 episodes: 10.0
+Last 100 episodes took time: 114.27594351768494
+Current number of frames seen: 6559141
+Current random action probability: 0.1
+
+
+Current Episode: 15800
+ Average reward over the last 100 episodes: 9.73
+Last 100 episodes took time: 111.83426666259766
+Current number of frames seen: 6604507
+Current random action probability: 0.1
+
+
+Current Episode: 15900
+ Average reward over the last 100 episodes: 10.44
+Last 100 episodes took time: 111.60739517211914
+Current number of frames seen: 6650021
+Current random action probability: 0.1
+
+
+Current Episode: 16000
+ Average reward over the last 100 episodes: 10.06
+Last 100 episodes took time: 112.27839922904968
+Current number of frames seen: 6695804
+Current random action probability: 0.1
+
+
+Current Episode: 16100
+ Average reward over the last 100 episodes: 10.17
+Last 100 episodes took time: 116.24216151237488
+Current number of frames seen: 6743329
+Current random action probability: 0.1
+
+
+Current Episode: 16200
+ Average reward over the last 100 episodes: 9.9
+Last 100 episodes took time: 113.30211424827576
+Current number of frames seen: 6789610
+Current random action probability: 0.1
+
+
+Current Episode: 16300
+ Average reward over the last 100 episodes: 9.97
+Last 100 episodes took time: 115.2625138759613
+Current number of frames seen: 6836459
+Current random action probability: 0.1
+
+
+Current Episode: 16400
+ Average reward over the last 100 episodes: 10.11
+Last 100 episodes took time: 117.71994137763977
+Current number of frames seen: 6884549
+Current random action probability: 0.1
+
+
+Current Episode: 16500
+ Average reward over the last 100 episodes: 9.83
+Last 100 episodes took time: 113.22715711593628
+Current number of frames seen: 6930508
+Current random action probability: 0.1
+
+
+Current Episode: 16600
+ Average reward over the last 100 episodes: 9.99
+Last 100 episodes took time: 114.48888063430786
+Current number of frames seen: 6977328
+Current random action probability: 0.1
+
+
+Current Episode: 16700
+ Average reward over the last 100 episodes: 10.21
+Last 100 episodes took time: 116.21676754951477
+Current number of frames seen: 7024712
+Current random action probability: 0.1
+
+
+Current Episode: 16800
+ Average reward over the last 100 episodes: 9.99
+Last 100 episodes took time: 110.92673897743225
+Current number of frames seen: 7070329
+Current random action probability: 0.1
+
+
+Current Episode: 16900
+ Average reward over the last 100 episodes: 10.4
+Last 100 episodes took time: 115.07242798805237
+Current number of frames seen: 7117395
+Current random action probability: 0.1
+
+
+Current Episode: 17000
+ Average reward over the last 100 episodes: 10.17
+Last 100 episodes took time: 110.25139451026917
+Current number of frames seen: 7162500
+Current random action probability: 0.1
+
+
+Current Episode: 17100
+ Average reward over the last 100 episodes: 10.17
+Last 100 episodes took time: 111.54703164100647
+Current number of frames seen: 7208122
+Current random action probability: 0.1
+
+
+Current Episode: 17200
+ Average reward over the last 100 episodes: 9.64
+Last 100 episodes took time: 112.5255434513092
+Current number of frames seen: 7254146
+Current random action probability: 0.1
+
+
+Current Episode: 17300
+ Average reward over the last 100 episodes: 10.08
+Last 100 episodes took time: 114.10459184646606
+Current number of frames seen: 7300818
+Current random action probability: 0.1
+
+
+Current Episode: 17400
+ Average reward over the last 100 episodes: 10.04
+Last 100 episodes took time: 111.72293663024902
+Current number of frames seen: 7346730
+Current random action probability: 0.1
+
+
+Current Episode: 17500
+ Average reward over the last 100 episodes: 10.06
+Last 100 episodes took time: 112.74287343025208
+Current number of frames seen: 7392730
+Current random action probability: 0.1
+
+
+Current Episode: 17600
+ Average reward over the last 100 episodes: 10.24
+Last 100 episodes took time: 110.57746839523315
+Current number of frames seen: 7437896
+Current random action probability: 0.1
+
+
+Current Episode: 17700
+ Average reward over the last 100 episodes: 9.61
+Last 100 episodes took time: 112.52574014663696
+Current number of frames seen: 7483903
+Current random action probability: 0.1
+
+
+Current Episode: 17800
+ Average reward over the last 100 episodes: 10.22
+Last 100 episodes took time: 112.53935742378235
+Current number of frames seen: 7530080
+Current random action probability: 0.1
+
+
+Current Episode: 17900
+ Average reward over the last 100 episodes: 10.13
+Last 100 episodes took time: 111.25633573532104
+Current number of frames seen: 7575774
+Current random action probability: 0.1
+
+
+Current Episode: 18000
+ Average reward over the last 100 episodes: 10.03
+Last 100 episodes took time: 113.24939203262329
+Current number of frames seen: 7622021
+Current random action probability: 0.1
+
+
+Current Episode: 18100
+ Average reward over the last 100 episodes: 10.03
+Last 100 episodes took time: 117.22774314880371
+Current number of frames seen: 7670087
+Current random action probability: 0.1
+
+
+Current Episode: 18200
+ Average reward over the last 100 episodes: 10.35
+Last 100 episodes took time: 115.73348593711853
+Current number of frames seen: 7717671
+Current random action probability: 0.1
+
+
+Current Episode: 18300
+ Average reward over the last 100 episodes: 10.15
+Last 100 episodes took time: 114.01690864562988
+Current number of frames seen: 7764293
+Current random action probability: 0.1
+
+
+Current Episode: 18400
+ Average reward over the last 100 episodes: 9.88
+Last 100 episodes took time: 112.33508896827698
+Current number of frames seen: 7810095
+Current random action probability: 0.1
+
+
+Current Episode: 18500
+ Average reward over the last 100 episodes: 9.94
+Last 100 episodes took time: 112.53648281097412
+Current number of frames seen: 7856168
+Current random action probability: 0.1
+
+
+Current Episode: 18600
+ Average reward over the last 100 episodes: 10.12
+Last 100 episodes took time: 115.65814232826233
+Current number of frames seen: 7903471
+Current random action probability: 0.1
+
+
+Current Episode: 18700
+ Average reward over the last 100 episodes: 10.21
+Last 100 episodes took time: 114.65731310844421
+Current number of frames seen: 7950160
+Current random action probability: 0.1
+
+
+Current Episode: 18800
+ Average reward over the last 100 episodes: 10.19
+Last 100 episodes took time: 113.39237999916077
+Current number of frames seen: 7996536
+Current random action probability: 0.1
+
+
+Current Episode: 18900
+ Average reward over the last 100 episodes: 10.49
+Last 100 episodes took time: 112.67362475395203
+Current number of frames seen: 8042573
+Current random action probability: 0.1
+
+
+Current Episode: 19000
+ Average reward over the last 100 episodes: 9.65
+Last 100 episodes took time: 110.92042016983032
+Current number of frames seen: 8087735
+Current random action probability: 0.1
+
+
+Current Episode: 19100
+ Average reward over the last 100 episodes: 10.06
+Last 100 episodes took time: 114.80962419509888
+Current number of frames seen: 8134614
+Current random action probability: 0.1
+
+
+Current Episode: 19200
+ Average reward over the last 100 episodes: 10.18
+Last 100 episodes took time: 114.81924724578857
+Current number of frames seen: 8181512
+Current random action probability: 0.1
+
+
+Current Episode: 19300
+ Average reward over the last 100 episodes: 10.01
+Last 100 episodes took time: 114.5246570110321
+Current number of frames seen: 8228364
+Current random action probability: 0.1
+
+
+Current Episode: 19400
+ Average reward over the last 100 episodes: 9.13
+Last 100 episodes took time: 108.14746022224426
+Current number of frames seen: 8272295
+Current random action probability: 0.1
+
+
+Current Episode: 19500
+ Average reward over the last 100 episodes: 10.29
+Last 100 episodes took time: 111.32976913452148
+Current number of frames seen: 8317723
+Current random action probability: 0.1
+
+
+Current Episode: 19600
+ Average reward over the last 100 episodes: 9.15
+Last 100 episodes took time: 106.12973618507385
+Current number of frames seen: 8361102
+Current random action probability: 0.1
+
+
+Current Episode: 19700
+ Average reward over the last 100 episodes: 9.86
+Last 100 episodes took time: 111.02260041236877
+Current number of frames seen: 8406267
+Current random action probability: 0.1
+
+
+Current Episode: 19800
+ Average reward over the last 100 episodes: 9.51
+Last 100 episodes took time: 107.34251999855042
+Current number of frames seen: 8450120
+Current random action probability: 0.1
+
+
+Current Episode: 19900
+ Average reward over the last 100 episodes: 10.04
+Last 100 episodes took time: 112.58663535118103
+Current number of frames seen: 8496135
+Current random action probability: 0.1
+
+
+Current Episode: 20000
+ Average reward over the last 100 episodes: 10.18
+Last 100 episodes took time: 112.23079252243042
+Current number of frames seen: 8542127
+Current random action probability: 0.1
+
+
+Current Episode: 20100
+ Average reward over the last 100 episodes: 10.52
+Last 100 episodes took time: 115.16871285438538
+Current number of frames seen: 8589468
+Current random action probability: 0.1
+
+
+Current Episode: 20200
+ Average reward over the last 100 episodes: 10.07
+Last 100 episodes took time: 108.52928423881531
+Current number of frames seen: 8633922
+Current random action probability: 0.1
+
+
+Current Episode: 20300
+ Average reward over the last 100 episodes: 10.02
+Last 100 episodes took time: 110.96041417121887
+Current number of frames seen: 8679410
+Current random action probability: 0.1
+
+
+Current Episode: 20400
+ Average reward over the last 100 episodes: 9.8
+Last 100 episodes took time: 115.00032472610474
+Current number of frames seen: 8726393
+Current random action probability: 0.1
+
+
+Current Episode: 20500
+ Average reward over the last 100 episodes: 9.74
+Last 100 episodes took time: 110.5845377445221
+Current number of frames seen: 8771560
+Current random action probability: 0.1
+
+
+Current Episode: 20600
+ Average reward over the last 100 episodes: 9.87
+Last 100 episodes took time: 104.79692769050598
+Current number of frames seen: 8814533
+Current random action probability: 0.1
+
+
+Current Episode: 20700
+ Average reward over the last 100 episodes: 10.08
+Last 100 episodes took time: 110.93056464195251
+Current number of frames seen: 8859936
+Current random action probability: 0.1
+
+
+Current Episode: 20800
+ Average reward over the last 100 episodes: 10.2
+Last 100 episodes took time: 113.72241950035095
+Current number of frames seen: 8906225
+Current random action probability: 0.1
+
+
+Current Episode: 20900
+ Average reward over the last 100 episodes: 10.61
+Last 100 episodes took time: 113.726802110672
+Current number of frames seen: 8952622
+Current random action probability: 0.1
+
+
+Current Episode: 21000
+ Average reward over the last 100 episodes: 10.24
+Last 100 episodes took time: 110.03400230407715
+Current number of frames seen: 8997373
+Current random action probability: 0.1
+
+
+Current Episode: 21100
+ Average reward over the last 100 episodes: 10.23
+Last 100 episodes took time: 112.9028160572052
+Current number of frames seen: 9043395
+Current random action probability: 0.1
+
+
+Current Episode: 21200
+ Average reward over the last 100 episodes: 10.43
+Last 100 episodes took time: 113.43002676963806
+Current number of frames seen: 9089789
+Current random action probability: 0.1
+
+
+Current Episode: 21300
+ Average reward over the last 100 episodes: 10.04
+Last 100 episodes took time: 112.54227828979492
+Current number of frames seen: 9135719
+Current random action probability: 0.1
+
+
+Current Episode: 21400
+ Average reward over the last 100 episodes: 10.08
+Last 100 episodes took time: 114.5650680065155
+Current number of frames seen: 9182675
+Current random action probability: 0.1
+
+
+Current Episode: 21500
+ Average reward over the last 100 episodes: 10.49
+Last 100 episodes took time: 117.75063252449036
+Current number of frames seen: 9230751
+Current random action probability: 0.1
+
+
+Current Episode: 21600
+ Average reward over the last 100 episodes: 9.83
+Last 100 episodes took time: 112.43694615364075
+Current number of frames seen: 9276597
+Current random action probability: 0.1
+
+
+Current Episode: 21700
+ Average reward over the last 100 episodes: 10.1
+Last 100 episodes took time: 107.57237768173218
+Current number of frames seen: 9320531
+Current random action probability: 0.1
+
+
+Current Episode: 21800
+ Average reward over the last 100 episodes: 10.16
+Last 100 episodes took time: 115.132639169693
+Current number of frames seen: 9367797
+Current random action probability: 0.1
+
+
+Current Episode: 21900
+ Average reward over the last 100 episodes: 10.19
+Last 100 episodes took time: 112.18756198883057
+Current number of frames seen: 9413891
+Current random action probability: 0.1
+
+
+Current Episode: 22000
+ Average reward over the last 100 episodes: 10.16
+Last 100 episodes took time: 114.30970191955566
+Current number of frames seen: 9460597
+Current random action probability: 0.1
+
+
+Current Episode: 22100
+ Average reward over the last 100 episodes: 9.39
+Last 100 episodes took time: 107.9577260017395
+Current number of frames seen: 9504585
+Current random action probability: 0.1
+
+
+Current Episode: 22200
+ Average reward over the last 100 episodes: 9.62
+Last 100 episodes took time: 113.61838436126709
+Current number of frames seen: 9551091
+Current random action probability: 0.1
+
+
+Current Episode: 22300
+ Average reward over the last 100 episodes: 9.99
+Last 100 episodes took time: 112.51926565170288
+Current number of frames seen: 9596861
+Current random action probability: 0.1
+
+
+Current Episode: 22400
+ Average reward over the last 100 episodes: 10.1
+Last 100 episodes took time: 114.235107421875
+Current number of frames seen: 9643353
+Current random action probability: 0.1
+
+
+Current Episode: 22500
+ Average reward over the last 100 episodes: 9.91
+Last 100 episodes took time: 114.06960725784302
+Current number of frames seen: 9690018
+Current random action probability: 0.1
+
+
+Current Episode: 22600
+ Average reward over the last 100 episodes: 9.92
+Last 100 episodes took time: 114.55350589752197
+Current number of frames seen: 9736771
+Current random action probability: 0.1
+
+
+Current Episode: 22700
+ Average reward over the last 100 episodes: 9.99
+Last 100 episodes took time: 111.46349620819092
+Current number of frames seen: 9782314
+Current random action probability: 0.1
+
+
+Current Episode: 22800
+ Average reward over the last 100 episodes: 9.99
+Last 100 episodes took time: 116.67621350288391
+Current number of frames seen: 9830000
+Current random action probability: 0.1
+
+
+Current Episode: 22900
+ Average reward over the last 100 episodes: 10.05
+Last 100 episodes took time: 115.40394043922424
+Current number of frames seen: 9877038
+Current random action probability: 0.1
+
+
+Current Episode: 23000
+ Average reward over the last 100 episodes: 9.42
+Last 100 episodes took time: 103.78227877616882
+Current number of frames seen: 9919369
+Current random action probability: 0.1
+
+
+Current Episode: 23100
+ Average reward over the last 100 episodes: 10.1
+Last 100 episodes took time: 110.93653225898743
+Current number of frames seen: 9964345
+Current random action probability: 0.1
+
+
+Current Episode: 23200
+ Average reward over the last 100 episodes: 10.24
+Last 100 episodes took time: 115.53917384147644
+Current number of frames seen: 10011358
+Current random action probability: 0.1
+
+
+Current Episode: 23300
+ Average reward over the last 100 episodes: 10.05
+Last 100 episodes took time: 111.10244035720825
+Current number of frames seen: 10056486
+Current random action probability: 0.1
+
+
+Current Episode: 23400
+ Average reward over the last 100 episodes: 10.33
+Last 100 episodes took time: 112.08899331092834
+Current number of frames seen: 10102199
+Current random action probability: 0.1
+
+
+Current Episode: 23500
+ Average reward over the last 100 episodes: 9.45
+Last 100 episodes took time: 108.81682252883911
+Current number of frames seen: 10146520
+Current random action probability: 0.1
+
+
+Current Episode: 23600
+ Average reward over the last 100 episodes: 10.26
+Last 100 episodes took time: 111.93733525276184
+Current number of frames seen: 10192082
+Current random action probability: 0.1
+
+
+Current Episode: 23700
+ Average reward over the last 100 episodes: 9.97
+Last 100 episodes took time: 113.81443572044373
+Current number of frames seen: 10238388
+Current random action probability: 0.1
+
+
+Current Episode: 23800
+ Average reward over the last 100 episodes: 10.17
+Last 100 episodes took time: 114.49164271354675
+Current number of frames seen: 10284865
+Current random action probability: 0.1
+
+
+Current Episode: 23900
+ Average reward over the last 100 episodes: 9.98
+Last 100 episodes took time: 112.05369877815247
+Current number of frames seen: 10330523
+Current random action probability: 0.1
+
+
+Current Episode: 24000
+ Average reward over the last 100 episodes: 10.02
+Last 100 episodes took time: 114.81552529335022
+Current number of frames seen: 10377167
+Current random action probability: 0.1
+
+
+Current Episode: 24100
+ Average reward over the last 100 episodes: 9.95
+Last 100 episodes took time: 110.50068473815918
+Current number of frames seen: 10422036
+Current random action probability: 0.1
+
+
+Current Episode: 24200
+ Average reward over the last 100 episodes: 10.09
+Last 100 episodes took time: 114.02786183357239
+Current number of frames seen: 10468536
+Current random action probability: 0.1
+
+
+Current Episode: 24300
+ Average reward over the last 100 episodes: 10.11
+Last 100 episodes took time: 116.12385439872742
+Current number of frames seen: 10516012
+Current random action probability: 0.1
+
+
+Current Episode: 24400
+ Average reward over the last 100 episodes: 9.86
+Last 100 episodes took time: 112.15663838386536
+Current number of frames seen: 10561675
+Current random action probability: 0.1
+
+
+Current Episode: 24500
+ Average reward over the last 100 episodes: 10.38
+Last 100 episodes took time: 114.34572076797485
+Current number of frames seen: 10608449
+Current random action probability: 0.1
+
+
+Current Episode: 24600
+ Average reward over the last 100 episodes: 10.33
+Last 100 episodes took time: 116.17029404640198
+Current number of frames seen: 10655976
+Current random action probability: 0.1
+
+
+Current Episode: 24700
+ Average reward over the last 100 episodes: 9.68
+Last 100 episodes took time: 109.73801255226135
+Current number of frames seen: 10700704
+Current random action probability: 0.1
+
+
+Current Episode: 24800
+ Average reward over the last 100 episodes: 10.08
+Last 100 episodes took time: 112.42479467391968
+Current number of frames seen: 10746777
+Current random action probability: 0.1
+
+
+Current Episode: 24900
+ Average reward over the last 100 episodes: 10.28
+Last 100 episodes took time: 112.6569926738739
+Current number of frames seen: 10792805
+Current random action probability: 0.1
+
+
+Current Episode: 25000
+ Average reward over the last 100 episodes: 9.96
+Last 100 episodes took time: 113.322585105896
+Current number of frames seen: 10839201
+Current random action probability: 0.1
+
+
+Current Episode: 25100
+ Average reward over the last 100 episodes: 10.07
+Last 100 episodes took time: 114.4030544757843
+Current number of frames seen: 10885952
+Current random action probability: 0.1
+
+
+Current Episode: 25200
+ Average reward over the last 100 episodes: 10.02
+Last 100 episodes took time: 110.52230906486511
+Current number of frames seen: 10931068
+Current random action probability: 0.1
+
+
+Current Episode: 25300
+ Average reward over the last 100 episodes: 10.05
+Last 100 episodes took time: 111.93840527534485
+Current number of frames seen: 10976814
+Current random action probability: 0.1
+
+
+Current Episode: 25400
+ Average reward over the last 100 episodes: 9.12
+Last 100 episodes took time: 105.24069023132324
+Current number of frames seen: 11019773
+Current random action probability: 0.1
+
+
+Current Episode: 25500
+ Average reward over the last 100 episodes: 10.18
+Last 100 episodes took time: 112.32017040252686
+Current number of frames seen: 11065661
+Current random action probability: 0.1
+
+
+Current Episode: 25600
+ Average reward over the last 100 episodes: 9.34
+Last 100 episodes took time: 111.5696702003479
+Current number of frames seen: 11111079
+Current random action probability: 0.1
+
+
+Current Episode: 25700
+ Average reward over the last 100 episodes: 10.28
+Last 100 episodes took time: 110.80923390388489
+Current number of frames seen: 11156142
+Current random action probability: 0.1
+
+
+Current Episode: 25800
+ Average reward over the last 100 episodes: 10.47
+Last 100 episodes took time: 118.86403465270996
+Current number of frames seen: 11204681
+Current random action probability: 0.1
+
+
+Current Episode: 25900
+ Average reward over the last 100 episodes: 10.13
+Last 100 episodes took time: 108.13438320159912
+Current number of frames seen: 11248742
+Current random action probability: 0.1
+
+
+Current Episode: 26000
+ Average reward over the last 100 episodes: 9.99
+Last 100 episodes took time: 114.52579021453857
+Current number of frames seen: 11295315
+Current random action probability: 0.1
+
+
+Current Episode: 26100
+ Average reward over the last 100 episodes: 9.95
+Last 100 episodes took time: 117.33982539176941
+Current number of frames seen: 11343307
+Current random action probability: 0.1
+
+
+Current Episode: 26200
+ Average reward over the last 100 episodes: 10.0
+Last 100 episodes took time: 115.91524934768677
+Current number of frames seen: 11390342
+Current random action probability: 0.1
+
+
+Current Episode: 26300
+ Average reward over the last 100 episodes: 9.78
+Last 100 episodes took time: 110.6528160572052
+Current number of frames seen: 11435291
+Current random action probability: 0.1
+
+
+Current Episode: 26400
+ Average reward over the last 100 episodes: 10.39
+Last 100 episodes took time: 113.5527925491333
+Current number of frames seen: 11481483
+Current random action probability: 0.1
+
+
+Current Episode: 26500
+ Average reward over the last 100 episodes: 10.25
+Last 100 episodes took time: 113.67825675010681
+Current number of frames seen: 11527839
+Current random action probability: 0.1
+
+
+Current Episode: 26600
+ Average reward over the last 100 episodes: 9.43
+Last 100 episodes took time: 110.05875396728516
+Current number of frames seen: 11572568
+Current random action probability: 0.1
+
+
+Current Episode: 26700
+ Average reward over the last 100 episodes: 10.1
+Last 100 episodes took time: 113.27192687988281
+Current number of frames seen: 11618943
+Current random action probability: 0.1
+
+
+Current Episode: 26800
+ Average reward over the last 100 episodes: 10.06
+Last 100 episodes took time: 111.74214792251587
+Current number of frames seen: 11664506
+Current random action probability: 0.1
+
+
+Current Episode: 26900
+ Average reward over the last 100 episodes: 9.93
+Last 100 episodes took time: 113.83317232131958
+Current number of frames seen: 11710901
+Current random action probability: 0.1
+
+
+Current Episode: 27000
+ Average reward over the last 100 episodes: 10.08
+Last 100 episodes took time: 112.40247845649719
+Current number of frames seen: 11756951
+Current random action probability: 0.1
+
+
+Current Episode: 27100
+ Average reward over the last 100 episodes: 9.93
+Last 100 episodes took time: 113.03739047050476
+Current number of frames seen: 11803096
+Current random action probability: 0.1
+
+
+Current Episode: 27200
+ Average reward over the last 100 episodes: 10.21
+Last 100 episodes took time: 115.84053015708923
+Current number of frames seen: 11850172
+Current random action probability: 0.1
+
+
+Current Episode: 27300
+ Average reward over the last 100 episodes: 10.14
+Last 100 episodes took time: 113.04166603088379
+Current number of frames seen: 11896381
+Current random action probability: 0.1
+
+
+Current Episode: 27400
+ Average reward over the last 100 episodes: 10.23
+Last 100 episodes took time: 110.85948586463928
+Current number of frames seen: 11941561
+Current random action probability: 0.1
+
+
+Current Episode: 27500
+ Average reward over the last 100 episodes: 9.47
+Last 100 episodes took time: 113.67181444168091
+Current number of frames seen: 11987855
+Current random action probability: 0.1
+
+
+Current Episode: 27600
+ Average reward over the last 100 episodes: 9.78
+Last 100 episodes took time: 111.52196455001831
+Current number of frames seen: 12033196
+Current random action probability: 0.1
+
+
+Current Episode: 27700
+ Average reward over the last 100 episodes: 10.26
+Last 100 episodes took time: 114.85532188415527
+Current number of frames seen: 12079903
+Current random action probability: 0.1
+
+
+Current Episode: 27800
+ Average reward over the last 100 episodes: 10.04
+Last 100 episodes took time: 112.84937763214111
+Current number of frames seen: 12125728
+Current random action probability: 0.1
+
+
+Current Episode: 27900
+ Average reward over the last 100 episodes: 10.21
+Last 100 episodes took time: 110.67718291282654
+Current number of frames seen: 12170966
+Current random action probability: 0.1
+
+
+Current Episode: 28000
+ Average reward over the last 100 episodes: 10.06
+Last 100 episodes took time: 113.29748964309692
+Current number of frames seen: 12217281
+Current random action probability: 0.1
+
+
+Current Episode: 28100
+ Average reward over the last 100 episodes: 10.18
+Last 100 episodes took time: 115.21826148033142
+Current number of frames seen: 12264280
+Current random action probability: 0.1
+
+
+Current Episode: 28200
+ Average reward over the last 100 episodes: 10.17
+Last 100 episodes took time: 111.40598177909851
+Current number of frames seen: 12309576
+Current random action probability: 0.1
+
+
+Current Episode: 28300
+ Average reward over the last 100 episodes: 9.47
+Last 100 episodes took time: 109.68749761581421
+Current number of frames seen: 12354206
+Current random action probability: 0.1
+
+
+Current Episode: 28400
+ Average reward over the last 100 episodes: 9.81
+Last 100 episodes took time: 112.97105503082275
+Current number of frames seen: 12400308
+Current random action probability: 0.1
+
+
+Current Episode: 28500
+ Average reward over the last 100 episodes: 9.93
+Last 100 episodes took time: 110.84740042686462
+Current number of frames seen: 12445529
+Current random action probability: 0.1
+
+
+Current Episode: 28600
+ Average reward over the last 100 episodes: 10.07
+Last 100 episodes took time: 113.48384499549866
+Current number of frames seen: 12491670
+Current random action probability: 0.1
+
+
+Current Episode: 28700
+ Average reward over the last 100 episodes: 10.42
+Last 100 episodes took time: 111.7919533252716
+Current number of frames seen: 12537026
+Current random action probability: 0.1
+
+
+Current Episode: 28800
+ Average reward over the last 100 episodes: 10.28
+Last 100 episodes took time: 109.18575882911682
+Current number of frames seen: 12581463
+Current random action probability: 0.1
+
+
+Current Episode: 28900
+ Average reward over the last 100 episodes: 10.02
+Last 100 episodes took time: 115.79685139656067
+Current number of frames seen: 12628253
+Current random action probability: 0.1
+
+
+Current Episode: 29000
+ Average reward over the last 100 episodes: 9.91
+Last 100 episodes took time: 113.0125629901886
+Current number of frames seen: 12674472
+Current random action probability: 0.1
+
+
+Current Episode: 29100
+ Average reward over the last 100 episodes: 9.78
+Last 100 episodes took time: 111.11270117759705
+Current number of frames seen: 12719650
+Current random action probability: 0.1
+
+
+Current Episode: 29200
+ Average reward over the last 100 episodes: 10.33
+Last 100 episodes took time: 115.1115071773529
+Current number of frames seen: 12766680
+Current random action probability: 0.1
+
+
+Current Episode: 29300
+ Average reward over the last 100 episodes: 10.05
+Last 100 episodes took time: 110.85973405838013
+Current number of frames seen: 12811703
+Current random action probability: 0.1
+
+
+Current Episode: 29400
+ Average reward over the last 100 episodes: 10.09
+Last 100 episodes took time: 109.81943464279175
+Current number of frames seen: 12856268
+Current random action probability: 0.1
+
+
+Current Episode: 29500
+ Average reward over the last 100 episodes: 10.08
+Last 100 episodes took time: 117.03166818618774
+Current number of frames seen: 12904020
+Current random action probability: 0.1
+
+
+Current Episode: 29600
+ Average reward over the last 100 episodes: 10.04
+Last 100 episodes took time: 113.1492247581482
+Current number of frames seen: 12950331
+Current random action probability: 0.1
+
+
+Current Episode: 29700
+ Average reward over the last 100 episodes: 9.78
+Last 100 episodes took time: 112.92320370674133
+Current number of frames seen: 12996384
+Current random action probability: 0.1
+
+
+Current Episode: 29800
+ Average reward over the last 100 episodes: 10.12
+Last 100 episodes took time: 114.90324473381042
+Current number of frames seen: 13043092
+Current random action probability: 0.1
+
+
+Current Episode: 29900
+ Average reward over the last 100 episodes: 10.12
+Last 100 episodes took time: 111.78199052810669
+Current number of frames seen: 13088498
+Current random action probability: 0.1
+
+
+Best average models:  [(10.696969696969697, 'best_avg_models/trained13532'), (10.696969696969697, 'best_avg_models/trained13533'), (10.666666666666666, 'best_avg_models/trained13538'), (10.666666666666666, 'best_avg_models/trained13539'), (10.666666666666666, 'best_avg_models/trained13540'), (10.666666666666666, 'best_avg_models/trained20905'), (10.666666666666666, 'best_avg_models/trained20906'), (10.666666666666666, 'best_avg_models/trained20907'), (10.656565656565656, 'best_avg_models/trained13531'), (10.656565656565656, 'best_avg_models/trained13534')]
+Best single iteration models:  [(14.0, 'best_single_models/trained1779'), (12.0, 'best_single_models/trained1717'), (12.0, 'best_single_models/trained1762'), (12.0, 'best_single_models/trained1801'), (12.0, 'best_single_models/trained1817'), (12.0, 'best_single_models/trained1920'), (12.0, 'best_single_models/trained1927'), (12.0, 'best_single_models/trained1967'), (12.0, 'best_single_models/trained2022'), (12.0, 'best_single_models/trained2076')]
+Best target models:  []
+Complete
