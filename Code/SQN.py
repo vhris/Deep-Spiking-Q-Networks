@@ -1,4 +1,5 @@
-# this file contains inplementations of a SpyTorch SQN and training methods for it
+# this file contains inplementations of a SQN and a conversion method (according to Rueckauer et al. for source see thesis)
+# the SQN class is adapted from SpyTorch (source, see thesis)
 
 import random
 import numpy as np
