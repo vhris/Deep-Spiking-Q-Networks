@@ -234,12 +234,16 @@ class SQN(nn.Module):
         if self.two_input_neurons:
             self.weights[0] = torch.cat([self.weights[0],torch.neg(self.weights[0])])
 
-    def load(self,weights,biases):
+    def load(self,weights,biases,transpose=True):
         """Analog to previous method, but weights and biases are passed directly
         it is used for converting networks.
-        For some reason, when converting, weights are saved in transposed form, so we need to trandpose them back to the correct shape."""
+        For some reason, when converting, weights are saved in transposed form, so we need to trandpose them back to the correct shape.
+        Whether to transpose or not can be controlled with the parameter transpose"""
         for l in range(0,len(weights)):
-            self.weights[l] = weights[l].detach().clone().transpose(0,1).requires_grad_(True)
+            to_add = weights[l].detach().clone()
+            if transpose:
+                to_add = to_add.transpose(0,1)
+            self.weights[l] = to_add.requires_grad_(True)
             if biases[l] is not None:
                 self.bias[l] = biases[l].detach().clone().requires_grad_(True)
             else:

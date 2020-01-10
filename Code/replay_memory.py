@@ -43,8 +43,8 @@ class ReplayMemory(object):
         memory_inputs = states.detach().numpy()
         # array for q-values ("ground truth")
         memory_outputs = model.forward(states).detach().numpy()
-        np.savez("trained/memory_inputs", memory_inputs)
-        np.savez("trained/memory_outputs", memory_outputs)
+        np.savez("memory_inputs", memory_inputs)
+        np.savez("memory_outputs", memory_outputs)
 
 
 class replay_dataset():
