@@ -52,4 +52,3 @@ Thanks to my advisor Mahmoud Akl and to my supervisor Prof. Dr.-Ing. Alois Chris
 	https://github.com/clamesc/Training-Neural-Networks-for-Event-Based-End-to-End-Robot-Control/tree/master/Controller
 	
 These and all other sources used are listed in the bibliography of the thesis.
-
