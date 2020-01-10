@@ -10,3 +10,4 @@ This folder contains the results of the thesis:
     Compare section 4.3.3 and table B.3 in thesis.
   - Breakout-Mnih-Preliminary-DQN contains our so far best result with the large convolutional network on Breakout. 
     The results are discussed in the breakout experiment Mnih-Large-Convolutional.ipynb in the experiments folder.
+  - Additionally, when running the experiments, folders for the corresponding experiments will appear.
