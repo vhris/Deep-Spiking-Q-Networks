@@ -10,15 +10,42 @@ import random
 from .replay_memory import ReplayMemory
 from .utils import plot_durations,plot_mean
 
-#TODO unify this with train_agent?
+def load_agent(environment,policy_net, device,epsilon=0,gym_seed=None,save_replay=False,replay_size=2*10**4,
+               max_steps=None,num_episodes=100,render =True, compare_against=None,
+               input_preprocessing=None, observation_history_length=None,frameskip=None,
+               no_op_range=None,no_op=None):
+    """load an agent on a gym environment
 
-def load_agent(environment,policy_net, device,epsilon=0,gym_seed=None,save_replay=False,replay_size=2*10**4,max_steps=None,num_episodes=100,render =True, compare_against=None):
+    Args:
+        environment: string: name of gym environment
+        policy_net: PyTorch neural network or SQN. The agent that determines the actions to take.
+                    Potentially other networks can be used, only requirement is that it implements the method forward.
+        device: torch device
+        epsilon: random action probability
+        gym_seed: seed for the environment
+        save_replay: whether to save the observed states and their corresponding actions
+        replay_size: size of the replay memory
+        max_steps: maximum number of steps in one episode. If None no maxmium is defined.
+        num_episodes: number of episodes to simulate the environment for
+        render: whether to render the environment
+        compare_against: None or PyTorch neural network or SQN.
+                         If not None, the policy_net is compared against this agent and a similarity measure is computed
+        input_preprocessing: optional function depending on the observation history which preprocesses the input before
+                             it is passed to the agent(s)
+        observation_history_length: None or int. Whether to keep a history of observations and how long it is.
+        frameskip: used for Atari environments. Determines the frameskip.
+        no_op_range: tuple (min,max). used for Atari environments (see Mnih et al.).
+        no_op: "do nothing" action for the game (int)."""
+
     # set up environment
     env = gym.make(environment)
     if gym_seed is not None:
         env.seed(gym_seed)
     if max_steps is not None:
         env._max_episode_steps = max_steps
+    # set up frameskip
+    if frameskip is not None:
+        env._frameskip = frameskip
 
     # keep track of rewards
     episode_rewards = []
@@ -38,9 +65,32 @@ def load_agent(environment,policy_net, device,epsilon=0,gym_seed=None,save_repla
     for i_episode in range(num_episodes):
         # Initialize the environment and state
         observation = env.reset()
-
+        # Keep track of the reward in this episode
         total_reward = 0
-        state = torch.tensor(observation, device=device).float()
+
+        # Initialize observation history if needed:
+        if observation_history_length is not None:
+            observation_history = []
+            observation_history.insert(0, observation)
+
+        # compute random number of do nothing operations, if specified:
+        if no_op_range is not None:
+            # random number or no ops between no_op[0] and no_op[1]
+            rand = random.randint(no_op_range[0], no_op_range[1])
+            for i in range(0, rand):
+                observation, reward, _, _ = env.step(no_op)
+                total_reward += reward
+                observation_history.insert(0, observation)
+                if len(observation_history) > observation_history_length:
+                    observation_history.pop(-1)
+
+        # preprocess the input if preprocessing specified
+        if input_preprocessing is not None:
+            observation = input_preprocessing(observation_history)
+        # else the observation needs to be cast to a float tensor for the computation of the neural network
+        else:
+            observation = torch.tensor(observation, device=device).float()
+        state = observation
 
         for t in count():
             if render:
@@ -64,7 +114,19 @@ def load_agent(environment,policy_net, device,epsilon=0,gym_seed=None,save_repla
 
             total_reward += reward
             reward = torch.tensor([reward], device=device)
-            observation = torch.tensor(observation, device=device).float()
+
+            # if observation history is required, add observation to history
+            if observation_history_length is not None:
+                observation_history.insert(0, observation)
+                if len(observation_history) > observation_history_length:
+                    observation_history.pop(-1)
+
+            # preprocess the input if a preprocessing function is specified
+            if input_preprocessing is not None:
+                observation = input_preprocessing(observation_history)
+            # else the observation needs to be cast to a float tensor for the computation of the neural network
+            else:
+                observation = torch.tensor(observation, device=device).float()
 
             # Observe new state
             if not done:

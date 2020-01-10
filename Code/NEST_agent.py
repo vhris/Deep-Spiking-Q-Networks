@@ -89,11 +89,12 @@ class Nestwork:
                     nest.SetStatus([self.layers[l][i]], {"I_e": self.biases[l][i].detach().item()})
 
         # connect layers
-        # input and 1
+        # connect input and first layer
         for i in range(0, len(self.inputs)):
             for j in range(0, len(self.layers[0])):
                 syn_dict_ex = {"weight": self.weights[0][i][j].detach().item()}
                 nest.Connect([self.inputs[i]], [self.layers[0][j]], syn_spec=syn_dict_ex)
+        # connect remaining layers
         for l in range(0,len(self.layers)-1):
             # connect l-th with l+1-th layer
             for i in range(0, len(self.layers[l])):

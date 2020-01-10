@@ -53,6 +53,8 @@ class replay_dataset():
         """Initializes the dataset
         Args:
             device: device for creating torch tensors
+            path_to_replay: path to the replay memory that is loaded. Path must lead to a folder which contains the files
+                            "memory_inputs.npz" and "memory_outputs.npz"
         """
         # Read DQN data
         obs = np.load(path_to_replay+"/memory_inputs.npz")

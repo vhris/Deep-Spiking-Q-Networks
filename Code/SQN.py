@@ -101,19 +101,12 @@ class SQN(nn.Module):
             self.input_size *= 2
 
     def forward(self, input_data):
-        """Simulates the network for the specified number of timesteps
-
+        """Simulates the network for the number of time steps specified in self.simulation_time
         Args:
-            batch_size: Number of inputs
-            input_data: tensor of the input data
-            input_size: the number of input neurons
-            timesteps: simulation length
-            device: device which torch is using
+            input_data: tensor
 
         Returns:
-             mem_rec: the recorded membrane potentials during the simulation
-             spk_rec: the recorded spikes during the simulation
-             spk_count: the total number of recorded spikes for each neuron"""
+             potentials (or spikes depending on the output method) of the output neurons"""
 
         # if two input neurons is True, double the input size, where the first set of values represents the positive inputs and the second set the negative inputs.
         if self.two_input_neurons:

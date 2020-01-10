@@ -1,3 +1,5 @@
+# parts of this file are adapted from the PyTorch tutorial on DQNs (https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html)
+
 import torch
 import torch.optim as optim
 import random
@@ -133,7 +135,7 @@ def train_agent(environment, policy_net,target_net, batch_size,gamma,eps_start,e
                 frameskip=None):
     """Args:
             environment: the name of the gym environment as a string
-            policy_net: the policy network for the agent
+            policy_net: the policy network for the agent. Must be a PyTorch neural network or SQN.
             target_net: the target network for the agent which should be a copy of the policy network initially
             batch_size: size of one training batch
             gamma: discount factor
