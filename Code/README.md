@@ -1,6 +1,6 @@
 # Code structure
 This file contains the main code of the project and is structured in the following way:
-  - __init__.py Allows importing this folder as a module.
+  - \_\_init\_\_.py Allows importing this folder as a module.
   - load_agent.py Loads a pre-trained agent described by a neural network and simulates it on a gym environment. Additionally,
                   a second agent can be specified against which the first is compared.
                   Optionally saves the replay memory of the simulated agent.
