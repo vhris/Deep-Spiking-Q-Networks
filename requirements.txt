@@ -26,7 +26,7 @@ jupyter-client==5.3.4
 jupyter-core==4.6.1
 kiwisolver==1.1.0
 lazyarray==0.3.3
-lxml==4.4.2
+lxml==4.9.1
 matplotlib==3.0.3
 more-itertools==8.0.2
 neo==0.6.1
